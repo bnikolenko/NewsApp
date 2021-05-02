@@ -5,7 +5,7 @@
 //  Created by Bodia on 13.02.2021.
 //  Copyright © 2021 Bodia. All rights reserved.
 //
-
+import CoreData
 import UIKit
 
 class ArticlesController: UITableViewController {
@@ -37,10 +37,12 @@ class ArticlesController: UITableViewController {
         definesPresentationContext = true
         filterContentForSearchText(nil)
     }
-    
+
+    @IBAction func saveArticle(_ sender: Any) {
+
+    }
 }
 
-//dataSource
 extension ArticlesController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

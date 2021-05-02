@@ -46,9 +46,8 @@ final class CoreDataManager {
                                                               at: persistentStoreURL,
                                                               options: nil)
         } catch {
-            fatalError("Unable to load Persistent Store")
+            //fatalError("Unable to load Persistent Store")
         }
-        
         return persistentStoreCoordinator
     }()
 }

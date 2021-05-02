@@ -40,7 +40,13 @@
                             <outlet property="delegate" destination="zVc-8j-Bbl" id="pLU-KS-6Vm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Articles" leftItemsSupplementBackButton="YES" id="kYc-Po-tGb"/>
+                    <navigationItem key="navigationItem" title="Articles" leftItemsSupplementBackButton="YES" id="kYc-Po-tGb">
+                        <barButtonItem key="rightBarButtonItem" image="star" catalog="system" id="MaY-sq-4KM">
+                            <connections>
+                                <action selector="saveArticle:" destination="zVc-8j-Bbl" id="7aE-nu-N24"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="hco-CO-Fdl" kind="show" identifier="toDetails" id="4Ti-Rq-fCm"/>
                     </connections>
@@ -87,6 +93,7 @@
     </scenes>
     <resources>
         <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
